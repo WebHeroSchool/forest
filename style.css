@@ -1,0 +1,65 @@
+body {
+font-family: Arial;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #C0C0C0;
+}
+
+.nav a {
+  color:red;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 34px;
+}
+
+.nav a:hover {
+   background: black;
+}
+
+.burger-line {
+   position: absolute;
+   top: 8px;
+   right: 10px;
+   width: 35px;
+   height: 2px;
+   background-color: red;
+}
+
+.second, .third  {
+   top:18px;
+ }
+
+ .fourth {
+    top: 28px;
+ }
+
+@media all and (max-width: 800px) {
+  .nav a {
+    justify-content: space-around;
+     font-size: 26px;
+     flex-grow: 1;
+ }
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+     font-size: 15px;
+     display: none;
+ }
+}
+
+@media all and (min-width: 500px) {
+  .burger-line {
+    display: none;
+ }
+   .second, .third  {
+     top:18px;
+ }
+   .fourth {
+     top: 28px;
+ }
+}
