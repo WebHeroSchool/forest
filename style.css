@@ -45,35 +45,32 @@ font-family: Arial;
     top: 28px;
  }
 
-@@media all and (max-width: 500px) {
-  .nav {
-     font-size: 15px;
-     display: none;
- }
- .article__title {
-   font-size: 13px;
- }
-}
-
-@media all and (min-width: 500px) {
-  .burger-line {
-    display: none;
- }
+ @media all and (min-width: 500px) {
+   .burger-line {
+      display: none;
+  }
    .second, .third  {
-     top:18px;
- }
+      top:18px;
+  }
    .fourth {
-     top: 28px;
+      top: 28px;
+  }
  }
-}
 
-@media (min-width: 1100px){
-  .article__title {
-     font-size: 40px;
+ @media only screen and (min-width: 768px) {
+   .article__title {
+      font-size: 21px;
+  }
  }
-  .nav a {
-    justify-content: space-around;
-     font-size: 26px;
-     flex-grow: 1;
-}
-}
+
+ @media only screen and (min-width: 992px) {
+   .article__title {
+      font-size: 30px;
+  }
+ }
+
+ @media (min-width: 1200px) {
+   .article__title {
+      font-size: 40px;
+  }
+ }
